@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<meta charset="utf-8">
+<head>
+	<title></title>
+		<link rel="stylesheet" type="text/css" href="css\normalize.css">
+		<link rel="stylesheet" type="text/css" href="css\header.css">
+		<link rel="stylesheet" type="text/css" href="css\style.css">
+		<link rel="stylesheet" type="text/css" href="css\writeme.css">
+		
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<div class="main-content clearfix">
+		<!-- Начинается хеадер-->
+		<header class="page-header">
+			<div class="container-header">
+				<a class="header-logo-block" href="#">
+					<img class="logo-img" src="img\logo-hor.png">
+					<span class="header-logo-text">Сайт портфолио</span>
+				</a>
+
+				<ul class="social">
+					<li ><a class="social-item vk" href="http://vk.com"></a></li>
+					<li ><a class="social-item tw" href="http://vk.com"></a></li>
+					<li ><a class="social-item fb" href="http://vk.com"></a></li>
+					<li ><a class="social-item gt" href="http://vk.com"></a></li>
+				</ul>
+
+			</div>
+			<div class="grid-line">
+					
+				</div>
+		</header>
+		<!-- Кончается хеадер-->
+			<!-- Начинается левое меню с контактами-->
+			<div class="container clearfix">
+				<div class="left-column">
+					<ul class="navigation">
+						<li class="about"><a href="index.html"> Обо мне</a></li>
+						<li class="mywork"><a href="mywork.html">Мои работы</a></li>
+						<li class="callmy current"><a href="writeme.html">Связаться со мной</a></li>
+					</ul>
+				<ul class="contacts">
+					<li class="cont-name">Контакты</li>
+					<li class="email">
+
+						<a href="mailto:petrov-84@mail.ru">petrov-84@mail.ru</a>	
+					</li>
+					<li class="phone">
+					<a href="tel:89258574222">89258574222</a>
+					
+					</li>
+					<li class="skype">
+						<a href="skype:sergpet23?call">sergpet23</a>
+					</li>
+				</ul>
+				</div>
+			<!-- Блок навигации закончен -->
+			<!-- Блок данных  -->
+			<div class="writeme-block">
+				<div class="wrap-content">
+					<div class="writeme-header">
+						
+					<h2 class="title-writeme">У вас интересный проект? Напишите мне</h2>
+						<div class="bottom-line">
+						
+						</div>
+					</div>
+
+					<form class="content-form">
+
+						<div class="wrap-field">
+
+							<div class="form-field left">
+							  <label for="firstname">Имя</label><br />
+							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться" required maxlength="20" />
+							 </div>
+
+							 <div class="form-field right">
+							 <label for="email">Email</label><br />
+	  							<input type="email" id="email" name="email" placeholder="Куда мне писать" required maxlength="50" />
+							 </div>
+							<div class="form-field fullwidth">
+							<label for="textmessage">Сообщение</label><br />
+							<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
+							</div>
+							<div class="form-field fullwidth">
+								<label for="capcha">Введите указанный код на картинке</label><br />
+								<div class="capcha-img"></div>
+								<input class="capcha-input" type="text" id="capcha" name="capcha" placeholder="Введите код" required maxlength="10" />
+							</div>
+							<div class="buttons">
+				    		<input class="bt-submit" type="submit" value="Войти">
+				    		<input class="bt-reset" type="reset" value="Очистить">
+				    		</div>	
+
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!--<div class="swriteme-block">
+				<div class="wrap-content">
+					<div class="writeme-title-header">
+					<h2>У вас интересный проект? Напишите мне</h2>
+					</div>
+					<form class="content-form">
+						<div class="wrap-field">
+
+							<div class="form-field left">
+							  <label for="firstname">Имя</label><br />
+							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться" required maxlength="20" />
+							 </div>
+
+							 <div class="form-field right">
+							 <label for="email">Email</label><br />
+	  							<input type="email" id="email" name="email" placeholder="Куда мне писать" required maxlength="50" />
+							 </div>
+							<div class="form-field fullwidth">
+							<label for="textmessage">Сообщение</label><br />
+							<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
+							</div>
+							<div class="form-field fullwidth">
+								<label for="capcha">Введите указанный код на картинке</label><br />
+								<div class="capcha-img"></div>
+								<input class="capcha-input" type="text" id="capcha" name="capcha" placeholder="Введите код" required maxlength="10" />
+							</div>
+							<div class="buttons">
+				    		<input class="bt-submit" type="submit" value="Войти">
+				    		<input class="bt-reset" type="reset" value="Очистить">
+				    		</div>	
+
+						</div>
+					</form>
+				
+				</div>
+			</div>
+			-->
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<footer class="page-footer">
+					<div class="grid-line">
+					
+				</div>
+		<div class="container">
+			<div class="lock">
+				<a href="#" class="lock-inner">Войти</a>
+			</div>
+			<div class="copyright">
+				© 2015 Это мой сайт, пожалуйста не копируйте его.
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

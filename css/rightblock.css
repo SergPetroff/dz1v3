@@ -1,0 +1,95 @@
+/*правый блок с информацией*/
+.right-column{
+	float: right
+}
+
+.info-block{
+	min-height: 235px;
+	padding-bottom: 45px;
+	width: 650px;
+	background: #eff3f7;
+	margin-bottom: 25px;
+}
+
+.block-title{
+	/*width: 210px;*/
+	display:inline-block;
+	padding: 15px;
+	padding-left: 25px;
+	font-size: 18pt;
+	color:#3BA8C0;
+	border-bottom: 3px solid #3BA8C0;
+
+}
+.block-title h2{
+	font-size: 30px;
+	font-weight:normal;
+}
+ /*Аватар*/
+.wrap-avatar{
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+	float:left;
+}
+.pic-avatar{
+width: 100%;
+}
+/*Блок с данными*/
+.wrap-info{
+	margin-top: 35px;
+	margin-left: 55px;
+}
+
+.profile{
+
+	list-style: none;
+}
+
+.profile .value-info{
+	margin-left: 25px;
+	max-width: 230px;
+}
+.profile .profile-item{
+	margin-left: 185px;
+	margin-bottom: 15px;
+}
+.profile .profile-item div{
+	display: inline-block;
+}
+
+.title-info{
+	vertical-align: top;
+}
+
+.skill-list .skill-item{
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	margin-bottom: 12px;
+	padding: 4px;
+	border-radius: 4px;
+	min-width: 50px;
+	color: white;
+	background: rgb(59,168,192);
+background: -moz-linear-gradient(top,  rgb(59,168,192) 0%, rgb(59,168,192) 50%, rgb(46,140,162) 51%, rgb(46,140,162) 100%);
+background: -webkit-linear-gradient(top,  rgb(59,168,192) 0%,rgb(59,168,192) 50%,rgb(46,140,162) 51%,rgb(46,140,162) 100%);
+background: linear-gradient(to bottom,  rgb(59,168,192) 0%,rgb(59,168,192) 50%,rgb(46,140,162) 51%,rgb(46,140,162) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 );
+
+
+}
+
+.info-block .content{
+	display: inline-block;
+	padding-top: 35px;
+}
+
+.info-block .ico{
+	width: 120px;
+}
+.info-block .ico img{
+	padding-left: 50px;
+}

@@ -1,0 +1,43 @@
+.mywork-content{
+	width: 650px;
+	float: right;
+}
+
+.wrap-content{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+.gallery{
+	list-style: none;
+}
+
+.gallery .gallery-item{
+	display:inline-block;
+	width: 180px;
+	margin-right: 20px;
+	margin-bottom: 113px;
+}
+
+.image-project{
+	background-color: rgba(65,145,187,0.7);
+	height: 130px;
+	border: 3px solid #3BA8C0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.image-project img{
+	width: 100%;
+	
+}
+.name-project{
+	margin-top: 4px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.desc{
+	text-align: center;
+}

@@ -1,0 +1,109 @@
+.container-header{
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.page-header{
+	height: 119px;
+	background: #eff3f7;
+	position: relative;
+	margin-bottom: 39px;
+}
+
+.page-header .header-logo-block{
+	position: absolute;
+	top:39px;
+	left: 0;
+}
+
+.page-header .header-logo-text{
+	position: absolute;
+	left: -9999px;
+}
+
+.page-header .social{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+/*Социальные кнопки*/
+
+.social{
+	float:right;
+}
+.social li{
+    display:inline-block;
+	list-style: none;
+    }
+
+ .social li a{
+
+ 	display:inherit;
+    width: 47px;
+    height: 47px;
+    /*margin-right: 10px;*/
+    vertical-align: middle;
+}
+
+.social-item{
+	margin-left: 10px;
+	background-image: url(../img/sprite-social.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.social li:first-child{
+	margin-left: 0; 
+}
+
+.vk{
+	width: 47px;
+    height: 47px;
+    background-position: -5px -119px;
+}
+
+.vk:hover{
+	width: 47px;
+    height: 47px;
+    background-position: -62px -119px;
+}
+
+.tw{
+	width: 47px;
+    height: 47px;
+    background-position: -119px -5px;
+}
+
+.tw:hover{
+	    width: 47px;
+    height: 47px;
+    background-position: -119px -62px;
+}
+
+.fb{
+	  width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+
+.fb:hover{
+	    width: 47px;
+    height: 47px;
+    background-position: -62px -5px;
+}
+.gt{
+	    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.gt:hover{
+	    width: 47px;
+    height: 47px;
+    background-position: -62px -62px;
+}

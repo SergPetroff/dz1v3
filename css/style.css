@@ -1,0 +1,342 @@
+html{ height: 100%; }
+
+body {
+	height: 100%;
+	display: table;
+	width: 100%;
+	background: url(../img/bckgrnd.png) repeat;
+	font: normal 1em 'fira_sanslight';
+	color: #4a545d;
+}
+
+/*Основной блок*/
+/*Левый блок*/
+
+.left-column{
+	float:left;
+	width: 250px;
+}
+.navigation{
+	background: #eff3f7;
+	overflow: hidden;
+    border-radius: 4px;
+	list-style: none;
+	margin: 0 0;
+	padding-left: 0;
+}
+
+.navigation a{
+	display: block;
+	color:#959AA8;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+/*.mywork:after{
+	position: absolute;
+	margin-top: 12px;
+	content: "";
+	display: block;
+	height: 3px; width: 220px;
+	background-color: #3BA8C0;
+
+}*/
+
+.navigation li{
+	margin: 0 10px;
+	background: #eff3f7;
+	padding: 15px;
+	color:#959AA8;
+	cursor: pointer;
+	font-size: 13pt;
+
+
+}
+.navigation .current{
+	padding-left: 25px;
+	margin: 0;
+	background: #3BA8C0;
+}
+
+.navigation .current a{
+
+	color: white;
+}
+
+.navigation li:hover{
+	margin: 0;
+	padding-left: 25px;
+	background: #3BA8C0;
+}
+
+.navigation li:hover a{
+
+	color: white;
+}
+
+.contacts{
+	clear:both;
+	width: 250px;
+	list-style: none;
+	margin-top: 25px;
+	padding-left: 0;
+}
+
+.left-column:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.contacts li{
+
+	padding: 15px;
+	color: white;
+}
+.contacts li a{
+		display: block;
+	padding-left: 45px;
+	color: white;
+	text-decoration: none;
+}
+
+
+.cont-name{
+		border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background: #3ba8c0;
+}
+
+.email{
+	background: #41b9d4;
+
+}
+
+.email:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/email.png);
+	display: inline-block;
+
+}
+
+
+.phone{
+	background: #48cbe8;
+
+}
+
+
+.phone:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/phone.png);
+	display: inline-block;
+}
+
+
+
+.skype{
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+	background: #51daf8;
+}
+
+
+
+.skype:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/skype.png);
+	display: inline-block;
+}
+
+/*Левый блок конец*/
+/* Блок с данными профиля*/
+
+.clearfix:before .clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.about-content{
+	width: 650px;
+	float: right;
+}
+
+.info-block{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+
+.info-body{
+	padding-bottom: 15px;
+}
+
+.title-header{
+	font-family: 'fira_sanslight';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	display: inline-block;
+	padding: 20px 22px ;
+}
+
+.sheet-info-list{
+	list-style: none;
+}
+.sheet-info-list li div{
+	display: inline-block;
+}
+/*Аватар*/	
+.wrap-avatar{
+	margin-left: 45px;
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+	float:left;
+}
+.pic-avatar{
+width: 100%;
+}
+.profile-list{
+	list-style: none;
+}
+
+.profile-list .profile-item{
+	margin-left: 185px;
+	margin-bottom: 15px;
+}
+.profile-list .profile-item div{
+	display: inline-block;
+}
+.profile-list .value-info{
+	margin-left: 25px;
+	max-width: 250px;
+}
+
+.skill{
+	margin-left: -6px!important;
+}
+
+.title-info{
+	vertical-align: top;
+}
+
+.skill-list .skill-item{
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+	margin-bottom: 12px;
+	padding: 4px;
+	border-radius: 4px;
+	min-width: 50px;
+	color: white;
+	background: rgb(59,168,192);
+	background: -moz-linear-gradient(top,  rgb(59,168,192) 0%, rgb(59,168,192) 50%, rgb(46,140,162) 51%, rgb(46,140,162) 100%);
+	background: -webkit-linear-gradient(top,  rgb(59,168,192) 0%,rgb(59,168,192) 50%,rgb(46,140,162) 51%,rgb(46,140,162) 100%);
+	background: linear-gradient(to bottom,  rgb(59,168,192) 0%,rgb(59,168,192) 50%,rgb(46,140,162) 51%,rgb(46,140,162) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 );
+}
+
+
+.title-image{
+	margin-right: 30px;
+}
+
+.value-info{
+	max-width: 500px;
+}
+/*Футер*/
+
+.page-footer{
+	background: #eff3f7;
+}
+
+.page-footer .container{
+
+	padding-top: 23px;
+	position: relative;
+}
+.page-footer .copyright{
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+} 
+
+.page-footer .lock{
+	position: absolute;
+	top: 26px;
+	left: 20px;
+}
+
+.lock .lock-inner{
+	display: block;
+	height: 40px;
+	font-family: 'fira_sanslight';
+	color: #4a545d;
+	font-size: 16px;
+	text-decoration: none;
+	background: url(../img/login.png) no-repeat;
+	padding-left: 24px;
+}
+
+.lock .lock-inner:hover{
+	text-decoration: underline;
+	background: url(../img/login-open.png) no-repeat;
+}
+
+/*Прибиваем футер к низу*/
+.wrapper{
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto !important;
+}
+.wrapper:after{
+	content: "";
+	height: 80px;
+	display: block;
+}
+
+.page-footer{
+	height: 80px;
+	margin-top: -80px;
+}
+.grid-line{
+
+	width: 100%;
+	height:3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7eff3+1,e7eff3+15,1d677a+52,e7eff3+85,e7eff3+100 */
+background: rgb(231,239,243); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(231,239,243,1) 1%, rgba(231,239,243,1) 15%, rgba(29,103,122,1) 52%, rgba(231,239,243,1) 85%, rgba(231,239,243,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(231,239,243,1) 1%,rgba(231,239,243,1) 15%,rgba(29,103,122,1) 52%,rgba(231,239,243,1) 85%,rgba(231,239,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(231,239,243,1) 1%,rgba(231,239,243,1) 15%,rgba(29,103,122,1) 52%,rgba(231,239,243,1) 85%,rgba(231,239,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+
+/*Прибиваем футер к низу конец*/
+
+/*Общие*/
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+

@@ -1,0 +1,143 @@
+/*Левый блок*/
+/*.left-column{
+	float: left;
+}
+*/
+.left-menu{
+	
+	width: 250px;
+	list-style: none;
+	margin: 0 0;
+	padding-left: 0;
+}
+
+.left-menu a{
+	display: block;
+	color:#959AA8;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+.mywork{
+	border-top:2px solid #3BA8C0;
+	/*border-bottom:2px solid #3BA8C0;*/
+}
+
+.mywork:after{
+	position: absolute;
+	margin-top: 12px;
+	content: "";
+	display: block;
+	height: 3px; width: 220px;
+	background-color: #3BA8C0;
+
+}
+
+.about{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.left-menu li{
+	background: #eff3f7;
+	padding: 15px;
+	color:#959AA8;
+	cursor: pointer;
+	font-size: 13pt;
+
+
+}
+.left-menu .current{
+	background: #3BA8C0;
+}
+
+.left-menu .current a{
+	color: white;
+}
+
+.left-menu li:hover{
+	background: #3BA8C0;
+}
+
+.left-menu li:hover a{
+	color: white;
+}
+
+.contacts{
+	width: 250px;
+	list-style: none;
+	margin-top: 25px;
+	padding-left: 0;
+
+}
+.contacts li{
+
+	padding: 15px;
+	color: white;
+}
+
+
+.cont-name{
+		border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background: #3ba8c0;
+}
+
+.email{
+	background: #41b9d4;
+
+}
+.email a{
+	padding-left: 45px;
+	color: white;
+	text-decoration: none;
+}
+.email:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/email.png);
+	display: inline-block;
+
+}
+
+
+.phone{
+	background: #48cbe8;
+
+}
+
+.phone a{
+	text-decoration: none;
+	padding-left: 45px;
+	color: white;
+}
+.phone:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/phone.png);
+	display: inline-block;
+}
+
+
+
+.skype{
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+	background: #51daf8;
+}
+
+.skype a{
+	text-decoration: none;
+	padding-left: 45px;
+	color: white;
+}
+
+.skype:before{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 10px;
+	content: url(../img/skype.png);
+	display: inline-block;
+}
+
