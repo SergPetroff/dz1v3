@@ -16,22 +16,65 @@
 .gallery .gallery-item{
 	display:inline-block;
 	width: 180px;
-	margin-right: 20px;
+	margin-left: 20px;
 	margin-bottom: 113px;
 }
-
+.gallery .gallery-item:nth-child(3n+1){
+	margin-left:0;
+}	
 .image-project{
-	background-color: rgba(65,145,187,0.7);
-	height: 130px;
 	border: 3px solid #3BA8C0;
 	border-radius: 5px;
 	overflow: hidden;
+	width:180px;
+	  height:116px;
+	  position:relative;
+  
 }
 
 .image-project img{
 	width: 100%;
 	
 }
+
+
+.fon:hover {
+	opacity:0.8;
+}
+.fon{
+	width:180px;
+	height:116px;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:1;
+	background-color: rgba(61,142,185,1);
+	 text-align: center;
+	/*-webkit-box-shadow: 0px 0px 2px 2px rgba(255,255,255,.75);*/
+	/*box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);*/
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.fon-text{
+	    display:inline-block;
+    vertical-align:middle;
+   /*position:absolute;
+   top:43%;
+   left:30%;*/
+	padding: 1px 8px;
+	color: white;
+    border:solid 2px white;
+    border-radius: 4px;
+}
+.helper {
+    ...
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+}
+
 .name-project{
 	margin-top: 4px;
 	margin-bottom: 20px;
