@@ -6,6 +6,7 @@
 .wrap-content{
 	background: #eff3f7;
 	border-radius: 4px;
+	overflow: hidden;
 }
 
 .writeme-header{
@@ -94,17 +95,6 @@
 	margin-top: 15px;
 	vertical-align: middle;
 }
-
-
-.clearfix:before .clearfix:after{
-	content: "";
-	display: table;
-}
-
-.clearfix:after{
-	clear: both;
-}
-
 .boxsize{
 	box-sizing: border-box;
 }
