@@ -77,25 +77,26 @@
 
 					<form class="content-form">
 
-						<div class="wrap-field">
+						<div class="wrap-field clearfix">
 
 							<div class="form-field left">
-							  <label for="firstname">Имя</label><br />
-							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться" required maxlength="20" />
+							  <label for="firstname">Имя</label>
+							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться" required="" maxlength="20">
 							 </div>
 
 							 <div class="form-field right">
-							 <label for="email">Email</label><br />
-	  							<input type="email" id="email" name="email" placeholder="Куда мне писать" required maxlength="50" />
+							 <label for="email">Email</label>
+	  							<input type="email" id="email" name="email" placeholder="Куда мне писать" required="" maxlength="50">
 							 </div>
-							<div class="form-field fullwidth">
-							<label for="textmessage">Сообщение</label><br />
-							<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
+
+							<div class="form-field">
+								<label for="textmessage">Сообщение</label>
+								<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
 							</div>
-							<div class="form-field fullwidth">
-								<label for="capcha">Введите указанный код на картинке</label><br />
-								<div class="capcha-img"></div>
-								<input class="capcha-input" type="text" id="capcha" name="capcha" placeholder="Введите код" required maxlength="10" />
+							<div class="form-field clearfix">
+								<label for="capcha">Введите указанный код на картинке</label>
+								<div class="capcha-img left"></div>
+								<input class="capcha-input right" type="text" id="capcha" name="capcha" placeholder="Введите код" required maxlength="10" />
 							</div>
 							<div class="buttons">
 				    		<input class="bt-submit" type="submit" value="Войти">
@@ -106,45 +107,6 @@
 					</form>
 				</div>
 			</div>
-
-			<!--<div class="swriteme-block">
-				<div class="wrap-content">
-					<div class="writeme-title-header">
-					<h2>У вас интересный проект? Напишите мне</h2>
-					</div>
-					<form class="content-form">
-						<div class="wrap-field">
-
-							<div class="form-field left">
-							  <label for="firstname">Имя</label><br />
-							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться" required maxlength="20" />
-							 </div>
-
-							 <div class="form-field right">
-							 <label for="email">Email</label><br />
-	  							<input type="email" id="email" name="email" placeholder="Куда мне писать" required maxlength="50" />
-							 </div>
-							<div class="form-field fullwidth">
-							<label for="textmessage">Сообщение</label><br />
-							<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
-							</div>
-							<div class="form-field fullwidth">
-								<label for="capcha">Введите указанный код на картинке</label><br />
-								<div class="capcha-img"></div>
-								<input class="capcha-input" type="text" id="capcha" name="capcha" placeholder="Введите код" required maxlength="10" />
-							</div>
-							<div class="buttons">
-				    		<input class="bt-submit" type="submit" value="Войти">
-				    		<input class="bt-reset" type="reset" value="Очистить">
-				    		</div>	
-
-						</div>
-					</form>
-				
-				</div>
-			</div>
-			-->
-
 			</div>
 
 		</div>
@@ -158,7 +120,7 @@
 				</div>
 		<div class="container">
 			<div class="lock">
-				<a href="#" class="lock-inner">Войти</a>
+				<a href="#" class="lock-inner"></a>
 			</div>
 			<div class="copyright">
 				© 2015 Это мой сайт, пожалуйста не копируйте его.

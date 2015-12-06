@@ -6,9 +6,11 @@
 .wrap-content{
 	background: #eff3f7;
 	border-radius: 4px;
+	overflow: hidden;
 }
 
 .writeme-header{
+	
 	background-color:#48cbe8;
 	font-family: 'fira_sanslight';
 	color: white;
@@ -34,52 +36,39 @@
 	
 }
 
+
+.wrap-field{
+	overflow: hidden;
+}
+
 .form-field{
 	margin-bottom: 17px;
 }
 
 .form-field label{
-	display: block;
-	padding-bottom: 8px;
 	font-family: 'fira_sanslight';
-	color: #959AA8;
+	color: #4a545d;
 }
 
-
-
-
-
 .form-field input{
-	height: 40px;
-	width: 191px;
-	padding-left: 5px;
+	width: 193px;
 	border-radius: 4px;
 	border: solid 2px #67dffa;
 }
 
-.form-field input::-webkit-input-placeholder {
-    color: #67dffa; /* Цвет подсказывающего текста */
-    font-size: 16px;
-   }
+
+
+.content-form{
+	margin-left: 124px;
+	width: 403px;
+}
 
 .form-field textarea{
-	padding-left: 5px;
 	width: 100%;
 	min-height: 182px;
 	resize: none;
 	border-radius: 4px;
 	border: solid 2px #67dffa;
-}
-
-.form-field textarea::-webkit-input-placeholder {
-    color: #67dffa; /* Цвет подсказывающего текста */
-    font-size: 16px;
-   }
-
-
-.content-form{
-	margin:0 auto;
-	width: 403px;
 }
 
 .capcha-img{
@@ -91,23 +80,14 @@
 	border: solid 2px #67dffa;
 }
 .capcha-input{
-	margin-top: 15px;
+	
 	vertical-align: middle;
 }
+#capcha{
 
-
-.clearfix:before .clearfix:after{
-	content: "";
-	display: table;
+	
 }
 
-.clearfix:after{
-	clear: both;
-}
-
-.boxsize{
-	box-sizing: border-box;
-}
 .buttons{
 	width: 100%;
 	display: inline-block;
@@ -136,11 +116,22 @@
 }
 
 .right{
-width: 191px;
 float: right;
 }
 
 .left{
-	width: 191px;
 	float: left;
+}
+
+.fullwidth{
+	width: 98%;
+}
+
+
+
+.test{
+	background-color: gray;
+	width: 650px;
+	height: 50px;
+	float: right;
 }
