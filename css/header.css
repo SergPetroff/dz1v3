@@ -20,6 +20,11 @@
 	left: 0;
 }
 
+.page-header .header-logo-block img{
+width: 243px;
+height: 42px;
+}
+
 .page-header .header-logo-text{
 	position: absolute;
 	left: -9999px;

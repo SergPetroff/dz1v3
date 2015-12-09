@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <head>
 	<title></title>
-		<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="app/bower/normalize-css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css\gallery.css">
 		<link rel="stylesheet" type="text/css" href="css\style.css">
 		<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
@@ -36,27 +36,25 @@
 		<!-- Кончается хеадер-->
 			<!-- Начинается левое меню с контактами-->
 			<div class="container clearfix">
-				<div class="left-column">
+				<aside class="side-bar left">
 					<ul class="navigation">
-						<li class="about"><a href="index.html"> Обо мне</a></li>
-						<li class="mywork current"><a href="mywork.html">Мои работы</a></li>
-						<li class="callmy"><a href="writeme.html">Связаться со мной</a></li>
+						<li class="navigation-item "><a class="nav-link" href="index.html"> Обо мне</a></li>
+						<li class="navigation-item current"><a class="nav-link" href="mywork.html">Мои работы</a></li>
+						<li class="navigation-item"><a class="nav-link" href="writeme.html">Связаться со мной</a></li>
 					</ul>
-				<ul class="contacts">
-					<li class="cont-name">Контакты</li>
-					<li class="email">
-
-						<a href="mailto:petrov-84@mail.ru">petrov-84@mail.ru</a>	
-					</li>
-					<li class="phone">
-					<a href="tel:89258574222">89258574222</a>
-					
-					</li>
-					<li class="skype">
-						<a href="skype:sergpet23?call">sergpet23</a>
-					</li>
-				</ul>
-				</div>
+					<ul class="contacts">
+						<li class="cont-name">Контакты</li>
+						<li class="email">
+							<a href="mailto:petrov-84@mail.ru">petrov-84@mail.ru</a>	
+						</li>
+						<li class="phone">
+							<a href="tel:89258574222">89258574222</a>
+						</li>
+						<li class="skype">
+							<a href="skype:sergpet23?call">sergpet23</a>
+						</li>
+					</ul>
+				</aside>		
 			<!-- Блок навигации закончен -->
 			<!-- Блок данных  -->
 			<div class="mywork-content">
@@ -108,47 +106,24 @@
 					</li>
 					<li class="gallery-item">
 						<div class="image-project">
+
   							<img src="img\lenta.jpg" alt="новости лента ру">
-			              <div class="fon">
-			              <span class="fon-text">
-			              	lenta.ru
-			              </span>
-			                </div>
+
 						</div>
 						<a class="name-project" href="http://lenta.ru">www.lenta.ru</a>
 						<div class="desc">
 							тут текст 
 						</div>
 					</li>
-						<li class="gallery-item">
+					<li class="gallery-item clearfix" >
 						<div class="image-project">
-  							<img src="img\habr.jpg" alt="хабр">
-			              <div class="fon">
-				              <div class="fon-text">
-				              	habrahabr.ru
-				              </div>
-				              
-			                </div>
+
+  							<img src="img\lenta.jpg" alt="новости лента ру">
+
 						</div>
-						<a class="name-project" href="http://habrahabr.ru">www.habrahabr.ru</a>
-						<div class="desc">
-							тут текст 
-						</div>
+
 					</li>
-										<li class="gallery-item">
-						<div class="image-project">
-  							<img src="img\geektimes.jpg" alt="гиктаймс">
-			              <div class="fon">
-			              <span class="fon-text">
-			              	geektimes.ru
-			              </span>
-			                </div>
-						</div>
-						<a class="name-project" href="http://geektimes.ru">www.geektimes.ru</a>
-						<div class="desc">
-							тут текст 
-						</div>
-					</li>	
+
 					
 				</ul>
 			</div>

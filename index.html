@@ -7,9 +7,8 @@
 		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		 <!-- Корректное масштабирование на разных устройствах -->
 		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="app/bower/normalize-css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css\style.css">
-		<!--<link rel="stylesheet" type="text/css" href="css\rightblock.css">-->
 		<link rel="stylesheet" type="text/css" href="css\header.css">
 		<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
 </head>
@@ -20,7 +19,7 @@
 		<header class="page-header">
 			<div class="container-header">
 				<a class="header-logo-block" href="#">
-					<img class="logo-img" src="img\logo-hor.png">
+					<img class="logo-img" src="img\logo-hor.png" alt="Логотип">
 					<span class="header-logo-text">Сайт портфолио</span>
 				</a>
 
@@ -39,27 +38,25 @@
 		<!-- Кончается хеадер-->
 		<!-- Начинается левое меню с контактами-->
 		<div class="container clearfix">
-			<div class="left-column">
-				<ul class="navigation">
-					<li class="about current"><a href="#"> Обо мне</a></li>
-					<li class="mywork"><a href="mywork.html">Мои работы</a></li>
-					<li class="callmy"><a href="writeme.html">Связаться со мной</a></li>
-				</ul>
-			<ul class="contacts">
-				<li class="cont-name">Контакты</li>
-				<li class="email">
-
-					<a href="mailto:petrov-84@mail.ru">petrov-84@mail.ru</a>	
-				</li>
-				<li class="phone">
+	<aside class="side-bar left">
+		<ul class="navigation">
+			<li class="navigation-item current"><a class="nav-link" href="#"> Обо мне</a></li>
+			<li class="navigation-item"><a class="nav-link" href="mywork.html">Мои работы</a></li>
+			<li class="navigation-item"><a class="nav-link" href="writeme.html">Связаться со мной</a></li>
+		</ul>
+		<ul class="contacts">
+			<li class="cont-name">Контакты</li>
+			<li class="email">
+				<a href="mailto:petrov-84@mail.ru">petrov-84@mail.ru</a>	
+			</li>
+			<li class="phone">
 				<a href="tel:89258574222">89258574222</a>
-				
-				</li>
-				<li class="skype">
-					<a href="skype:sergpet23?call">sergpet23</a>
-				</li>
-			</ul>
-			</div>
+			</li>
+			<li class="skype">
+				<a href="skype:sergpet23?call">sergpet23</a>
+			</li>
+		</ul>
+	</aside>
 		<!-- Блок навигации закончен -->
 		<!-- Блок данных  -->
 		<div class="about-content">
@@ -73,7 +70,7 @@
 							<ul class="profile-list">
 								<li class="profile-item">
 									<div class="title-info">Меня зовут:</div>
-									<div class="value-info">Сергей Петров</div>
+									<div class="value-info">Петров Сергей Викторович</div>
 								</li>
 								<li class="profile-item">
 									<div class="title-info">Мой возраст:</div>
@@ -86,7 +83,7 @@
 								<li class="profile-item">
 									<div class="title-info">Моя специализация:</div>
 									<div class="value-info">FRONTEND разработчик</div>
-								li>
+								<li>
 								<li class="profile-item">
 									<div class="title-info">Ключевые навыки:</div>
 									<div class="value-info skill">
@@ -108,7 +105,9 @@
 					<div class="info-body">
 					<ul class="sheet-info-list">
 						<li class="sheet-info-item">
-						<div class="title-image"><img src="img\bags.png"></div>
+						<div class="title-image bags">
+							
+						</div>
 						<div class="value-info">
 							<p>ОАО Комсомольская правда - оператор передачи полос</p>
 							<p>Февраль 2008 - Март 2010</p>
@@ -116,7 +115,7 @@
 
 						</li>
 						<li class="sheet-info-item">
-													<div class="title-image"><img src="img\bags.png"></div>
+							<div class="title-image bags"></div>
 						<div class="value-info">
 							<p>"Мегафудз" ИТ специалист по СЭД</p>
 							<p>Март 2010 - Май 2013</p>
@@ -131,7 +130,9 @@
 					<div class="info-body">
 					<ul class="sheet-info-list">
 						<li class="sheet-info-item">
-						<div class="title-image"><img src="img\diplom.png"></div>
+						<div class="title-image diplom">
+							
+						</div>
 						<div class="value-info">
 					<p>Высшее МУПОИЧ "Дубна"</p>
 					<p>Сентябрь 2003 - июнь 2008</p>
@@ -139,7 +140,9 @@
 
 						</li>
 						<li class="sheet-info-item">
-													<div class="title-image"><img src="img\bags.png"></div>
+							<div class="title-image bags">
+								
+							</div>
 						<div class="value-info">
 					<p>Курсы Loftscool</p>
 					<p>Ноябрь 2015 - Январь 2016</p>

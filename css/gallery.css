@@ -37,7 +37,15 @@
 	
 }
 
-
+.addnew{
+	border:dashed 1px #3BA8C0;
+	
+}
+/*.addnew:after{
+	content: "Добавить проект";
+	display: block;
+}
+*/
 .fon:hover {
 	opacity:0.8;
 }
