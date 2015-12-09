@@ -23,7 +23,7 @@
 	color: white;
 	margin: 0 0 23px 0;
 	vertical-align: middle;
-	padding-top: 50px;
+	padding-top: 36px;
 	padding-bottom: 20px;
 }
 
@@ -31,12 +31,12 @@
 
 	height:18px;
 	background-color: #67dffa;
-	margin-bottom: 48px;
+	margin-bottom: 36px;
 	
 }
 
 .form-field{
-	margin-bottom: 17px;
+	margin-bottom: 2px;
 }
 
 .form-field label{
@@ -83,13 +83,23 @@
 	width: 403px;
 }
 
-.capcha-img{
+.capcha{
 	display: inline-block;
+     margin: 0 auto;
 	width: 191px;
 	height: 79px;
-	background-color: #fbfcfd;
+	/*background-color: #fbfcfd;*/
+	
 	border-radius: 4px;
 	border: solid 2px #67dffa;
+}
+
+.img-capcha{
+	width: inherit;
+	height: inherit;
+	margin-left: 20px;
+	margin-top: 20px;
+	background: url(../img/capcha.png) no-repeat;
 }
 .capcha-input{
 	margin-top: 15px;

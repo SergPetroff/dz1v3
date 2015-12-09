@@ -80,7 +80,7 @@ a{
 }
 .contacts li{
 
-	padding: 15px;
+	padding: 6px 18px;
 	color: white;
 }
 .contacts li a{
@@ -92,7 +92,8 @@ a{
 
 
 .cont-name{
-		border-top-left-radius: 5px;
+	font-size: 24px;
+	border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 	background: #3ba8c0;
 }
