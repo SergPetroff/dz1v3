@@ -1,3 +1,7 @@
 {
-	"name" : "dzmysite"
+  "name": "dzmysite",
+  "dependencies": {
+    "bPopup": "bpopup#~0.11.0",
+    "jquery": "~2.1.4"
+  }
 }

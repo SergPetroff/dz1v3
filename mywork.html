@@ -4,11 +4,14 @@
 <head>
 	<title></title>
 		<link rel="stylesheet" type="text/css" href="app/bower/normalize-css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css\gallery.css">
-		<link rel="stylesheet" type="text/css" href="css\style.css">
-		<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
+		<link rel="stylesheet" type="text/css" href="app/css/header.css">
+		<link rel="stylesheet" type="text/css" href="app/css/style.css">
+		<link rel="stylesheet" type="text/css" href="app/css/gallery.css">
+		<link rel="stylesheet" type="text/css" href="app/css/popup.css">
+
+		<link rel="stylesheet" type="text/css" href="app/fonts/fira/fira.css">
 		<!--<link rel="stylesheet" type="text/css" href="css\rightblock.css">-->
-		<link rel="stylesheet" type="text/css" href="css\header.css">
+		
 </head>
 <body>
 	<div class="wrapper clearfix">
@@ -17,7 +20,7 @@
 		<header class="page-header">
 			<div class="container-header">
 				<a class="header-logo-block" href="#">
-					<img class="logo-img" src="img\logo-hor.png">
+					<img class="logo-img" src="app\img\logo-hor.png">
 					<span class="header-logo-text">Сайт портфолио</span>
 				</a>
 
@@ -56,6 +59,19 @@
 					</ul>
 				</aside>		
 			<!-- Блок навигации закончен -->
+
+			<div class="info-popup">
+	<div class="checked-form clearfix b-close">
+		<div class="close-btn-green right">
+		
+	</div>
+		<div class="checked-send-wraptext">
+			<span class="checked-send-title">Ура!</span></br>
+			<span class="checked-send-desc">Проект успешно добавлен</span>
+		</div>
+	</div>
+
+</div>
 			<!-- Блок данных  -->
 			<div class="mywork-content">
 			<div class="wrap-content">
@@ -63,7 +79,7 @@
 				<ul class="gallery">
 					<li class="gallery-item">
 						<div class="image-project">
-  							<img src="img/yandex.jpg" alt="яндекс">
+  							<img src="app\img\yandex.jpg" alt="яндекс">
 			              <div class="fon">
 					              <div class="fon-text">
 					              	yandex.ru
@@ -78,7 +94,7 @@
 					</li>
 				<li class="gallery-item">
 						<div class="image-project">
-  							<img src="img\mailru.jpg" alt="mail.ru">
+  							<img src="app\img\mailru.jpg" alt="mail.ru">
 			              <div class="fon">
 			              <span class="fon-text">
 			              	mail.ru
@@ -92,7 +108,7 @@
 					</li>
 										<li class="gallery-item">
 						<div class="image-project">
-  							<img src="img\auto.ru.jpg" alt="авто ру">
+  							<img src="app\img\auto.ru.jpg" alt="авто ру">
 			              <div class="fon">
 			              <span class="fon-text">
 			              	auto.ru
@@ -107,7 +123,7 @@
 					<li class="gallery-item">
 						<div class="image-project">
 
-  							<img src="img\lenta.jpg" alt="новости лента ру">
+  							<img src="app\img\lenta.jpg" alt="новости лента ру">
 			              <div class="fon">
 			              <span class="fon-text">
 			              	auto.ru
@@ -120,7 +136,7 @@
 						</div>
 					</li>
 					<li class="gallery-item" >
-					<a href="#" class="link-addnew">
+					<a id="link-addnew-item" href="#" class="link-addnew">
 						<div class="image-project addnew">
 							<div class="add-img"></div>
 							<span>Добавить проект</span>
@@ -138,6 +154,73 @@
 		</div>
 	</div>
 
+	<!-- Скрытые popup формы-->
+<form class="popup-add-content">
+	<div class="ppform-wrap-content">
+		<div class="header-add-form clearfix">
+			<div class="title-header-form left">
+				Добавление проекта
+			</div>
+			<div class="close-button right b-close">
+				
+			</div>
+
+		</div>
+		<div class="buttom-line">
+				
+		</div>
+
+		<div class="main-add-form">
+			<div class="error-send">
+				<div class="error-send-wraptext">
+					<span class="error-send-title">Ошибка!</span></br>
+					<span class="error-send-desc">Невозможно отправить проект</span>
+				</div>
+			</div>
+			<label for="nameproject">Название проекта</label>
+			<input type="text" name="nameproject" id="nameproject" placeholder="Введите название"></br>
+			<label for="addfile">Картинка проекта</label>
+			<label for="addfile" class="lbl-addfile">
+			<span >Загрузите изображение</span>
+			
+				<input type="file" name="hideinput" id="addfile" class="hideinput" accept="image/jpeg, image/png, image/gif">
+				<div class="wrap-img-add-file">
+					<div class="img-add-file"></div>
+				</div>
+			</label>
+
+			<!--<input type="file" name="addfile" id="addfile" placeholder="Загрузите изображение">--></br>
+			<label for="urlfield">URL проекта</label>
+			<input type="url" name="urlfield" id="urlfield" placeholder="Добавьте ссылку"></br>
+
+			<label for="Description">Описание</label>
+			<textarea name="Description" id="Description" rows="4" placeholder="Пара слов о вашем проекте"></textarea></br>
+			<div class="button-block">
+			<input type="submit" value="Отправить" class="btn-send">
+			</div>
+		</div>
+	</div>
+
+
+</form>
+
+
+<div class="info-popup">
+	<div class="checked-form">
+		<div class="close-btn-green right">
+		
+	</div>
+		<div class="checked-send-wraptext">
+			<span class="checked-send-title">Ура!</span></br>
+			<span class="checked-send-desc">Проект успешно добавлен</span>
+		</div>
+	</div>
+
+</div>
+
+<!-- футер -->
+
+
 	<footer class="page-footer">
 					<div class="grid-line">
 					
@@ -151,5 +234,8 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="app/bower/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="app/bower/bPopup/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="app/js/mainjs.js"></script>
 </body>
 </html>
