@@ -1,22 +1,29 @@
 var Module = (function () {
+	//Инициализирует наш модуль
 	var init = function(){
 		_setUpListners();
 	};
-
+	//Прослушка событий
 	var _setUpListners = function(){
-		//Прослушка событий
+	
 		$('#link-addnew-item').on('click', _showModal); //ОТкрыть попап форму
 		$('.popup-add-content').on('submit', _addProject);
 
 	};
-
+	//Работает с модельными окнами
 	var _showModal = function (ev) {
 		console.log('вызов модального окна');
-		$('.popup-add-content').bPopup();
+		$('.popup-add-content').bPopup({ //открытие popup окна
+			speed: 650,
+			transition: 'slideDown',
+			onClose:function(){
+				$( ".error-send").hide(); //скрытие окна ошибки
+			}
+		});
 
 		ev.preventDefault();
 	};
-
+	// ОТправка проекта и проверка данных от сервера
 	var _addProject = function(ev){
 		ev.preventDefault(); // делать обязательно для отправки формы, иначе не будет работать ajax
 		//Обьявлем переменные
@@ -36,8 +43,17 @@ var Module = (function () {
 			console.log(ans);
 			if(ans.status === "OK"){
 				console.log('Все прошло успешно')
+						$('.popup-add-content')[0].reset(); // Очистка полей
+						var bPopup = $('.popup-add-content').bPopup();
+						bPopup.close(); //Закрытие формы
+						$( ".error-send").hide();
+						$('.info-popup').bPopup({ //открытие popup окна
+							speed: 650,
+							transition: 'slideDown',
+						});
+
 			}else{
-				$( ".error-send").show();
+				$(".error-send").show();
 			}
 
 		})

@@ -235,7 +235,7 @@ width: 100%;
 }
 
 .skill-list .skill-item{
-	  font-size: 14px;
+	font-size: 14px;
   	font-family: "ProximaNovaCond";
 	display: inline-block;
 	list-style: none;
@@ -252,7 +252,31 @@ width: 100%;
 }
 
 
-.title-image{
+.sheet-info-item.bags:before{
+	display: block;
+	content: url(../img/bags.png);
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	padding-top: 5px;
+}
+
+.sheet-info-item.diplom:before{
+	display: block;
+	content: url(../img/diplom.png);
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	padding-top: 5px;
+}
+
+.sheet-info-item .value-info{
+    padding-left: 66px;
+    margin-bottom: 18px;
+}
+
+
+/*.title-image{
 	vertical-align: top;
 	margin-left: 19px;
 	margin-top: 10px;
@@ -267,7 +291,7 @@ width: 100%;
 
 .diplom{
 	background: url(../img/diplom.png) no-repeat;
-}
+}*/
 
 /*Футер*/
 
