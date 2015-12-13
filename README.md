@@ -5,4 +5,5 @@
 3. bower i
 4. npm i
 5. normalize i
-6. gulp
+6. Modernizr -i
+7. jquery-placeholder -i
