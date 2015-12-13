@@ -23,7 +23,6 @@ float: right;
 
 .side-bar{
 	width: 250px;
-	overflow: hidden;
 }
 
 .navigation{
@@ -33,6 +32,7 @@ float: right;
 	border-radius: 4px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 28px;
 }
 .navigation .navigation-item {
 	margin: 0 11px;
@@ -80,18 +80,19 @@ a{
 }
 .contacts li{
 
-	padding: 6px 18px;
+	padding: 8px 18px;
 	color: white;
 }
 .contacts li a{
 		display: block;
-	padding-left: 45px;
+	padding-left: 65px;
 	color: white;
 	text-decoration: none;
 }
 
 
 .cont-name{
+	padding: 2px 18px !important;
 	font-size: 24px;
 	border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -106,7 +107,7 @@ a{
 .email:before{
 	position: absolute;
 	padding-top: 3px;
-	padding-left: 10px;
+	padding-left: 25px;
 	content: url(../img/email.png);
 	display: inline-block;
 
@@ -122,7 +123,7 @@ a{
 .phone:before{
 	position: absolute;
 	padding-top: 3px;
-	padding-left: 10px;
+	padding-left: 25px;
 	content: url(../img/phone.png);
 	display: inline-block;
 }
@@ -140,7 +141,7 @@ a{
 .skype:before{
 	position: absolute;
 	padding-top: 3px;
-	padding-left: 10px;
+	padding-left: 25px;
 	content: url(../img/skype.png);
 	display: inline-block;
 }
@@ -170,10 +171,6 @@ a{
 }
 
 
-.info-body{
-	/*padding-bottom: 15px;*/
-}
-
 .title-header{
 	font-family: 'fira_sanslight';
 	font-size: 27px;
@@ -188,9 +185,12 @@ a{
 .sheet-info-list{
 	list-style: none;
 }
-.sheet-info-list li div{
-	display: inline-block;
+
+.sheet-info-item{
+	padding-left: 19px;
 }
+
+
 /*Аватар*/	
 .wrap-avatar{
 	margin-left: 54px;
@@ -210,8 +210,8 @@ width: 100%;
 }
 
 .profile-list .profile-item{
-	margin-left: 190px;
-	margin-bottom: 10px;
+	margin-left: 191px;
+	margin-bottom: 9px;
 }
 .profile-list .profile-item div{
 	display: inline-block;
@@ -225,8 +225,8 @@ width: 100%;
 	padding:0;
 }
 .skill{
-	margin-top: 5px;
-	margin-left: -6px!important;
+	margin-top: 1px;
+	margin-left: -9px!important;
 }
 
 .title-info{
@@ -241,6 +241,7 @@ width: 100%;
 	list-style: none;
 	text-align: center;
 	margin-bottom: 8px;
+	/*padding: 2px 10px;*/
 	border-radius: 4px;
 	min-width: 50px;
 	color: white;

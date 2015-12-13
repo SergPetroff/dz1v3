@@ -18,11 +18,13 @@
 	position: absolute;
 	top:39px;
 	left: 0;
+	width: 243px;
+    height: 42px;
+    overflow: hidden;
 }
 
 .page-header .header-logo-block img{
-width: 243px;
-height: 42px;
+width: 100%;
 }
 
 .page-header .header-logo-text{
@@ -56,7 +58,7 @@ height: 42px;
 }
 
 .social-item{
-	margin-left: 10px;
+	margin-left: 19px;
 	background-image: url(../img/sprite-social.png);
     background-repeat: no-repeat;
     display: block;

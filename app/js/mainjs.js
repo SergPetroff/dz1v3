@@ -1,3 +1,11 @@
+$(document).ready(function() {
+	if(!Modernizr.input.placeholder){
+		$('input, #textmessage').placeholder();
+		console.log('не поддерживает')
+	}
+	
+});
+
 var Module = (function () {
 	//Инициализирует наш модуль
 	var init = function(){
@@ -29,7 +37,7 @@ var Module = (function () {
 		//Обьявлем переменные
 		var form = $(this),
 			url = 'app/add_project.php',
-			data = form.serialize();
+			data = form.serialize(); // Получаем данные из полей
 		console.log(data);
 		// ОТправляем данные на сервер
 		$.ajax({
