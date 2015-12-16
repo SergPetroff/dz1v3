@@ -14,12 +14,15 @@ var Module = (function () {
 	//Прослушка событий
 	var _setUpListners = function(){
 	
-		$('#link-addnew-item').on('click', _showModal); //ОТкрыть попап форму
-		$('.popup-add-content').on('submit', _addProject);
+		$('#link-addnew-item').on('click', _showModalAddWork); //ОТкрыть попап форму
+		$('.popup-add-content').on('submit', _addProject); // отправка дынных формы
 
 	};
+
+
+
 	//Работает с модельными окнами
-	var _showModal = function (ev) {
+	var _showModalAddWork = function (ev) {
 		console.log('вызов модального окна');
 		$('.popup-add-content').bPopup({ //открытие popup окна
 			speed: 650,

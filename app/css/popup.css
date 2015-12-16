@@ -1,4 +1,85 @@
+/*Окно аутентификации*/
 
+.login-form{
+    display: none;
+    font-family: 'fira_sanslight';
+    width: 590px;
+    background: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+}
+.login-form-header{
+    background: #48cbe8;
+    color: white;
+    min-height: 44px;
+    text-align: center;
+}
+
+.login-form-header-title{
+        padding: 15px;
+    font-size: 40px;
+}
+
+.login-form-buttom-line{
+    background: #67dffa;
+    height: 15px;
+    margin-bottom: 15px;
+}
+.login-form-main-content{
+    margin: 0 auto;
+    width: 422px;
+    text-align: center;
+}
+.login-form-main-content label{
+    font-size: 36px;
+    color: #959AA8;
+}
+.login-input, .pass-input{
+
+    padding:9px 7px;
+    width: 407px;
+    font-size: 25px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: solid 2px #48cbe8;
+    height: 40px;
+    color: #959AA8
+}
+
+.pass-input{
+    margin-bottom: 33px;
+}
+
+
+.login-form-main-content input::-webkit-input-placeholder {
+    color: #67dffa; /* Цвет подсказывающего текста */
+    font-size: 17px;
+    padding: 4px 8px;
+   }
+
+
+.login-form-btn-send{
+    padding: 0 60px;
+    font-family: 'fira_sanslight';
+    background: #48cbe8;
+    color: white;
+    box-shadow: 0px 3px 0px 0px #3ba8c0;
+    border-radius: 4px;
+    border: solid 2px #48cbe8;
+    font-size: 36px;
+    margin-bottom: 28px;
+   }
+   .btn-send:hover{
+        box-shadow: none;
+   }
+
+
+   .no-valide{
+        background: rgba(243, 63, 7, 0.45);
+   }
+
+/*Окно загрузки файла*/
 .popup-add-content{
     display:none;
     width: 362px;
