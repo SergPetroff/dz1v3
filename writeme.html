@@ -12,7 +12,9 @@
 		<link rel="stylesheet" type="text/css" href="app/css/style.css">
 		<link rel="stylesheet" type="text/css" href="app/css/header.css">
 		<link rel="stylesheet" type="text/css" href="app/css/writeme.css">
+		<link rel="stylesheet" type="text/css" href="app/css/popup.css">
 		<link rel="stylesheet" type="text/css" href="app/fonts/fira/fira.css">
+		<link rel="stylesheet" type="text/css" href="app/bower/qtip2/jquery.qtip.min.css">
 				<!--favicon -->
 		<link rel="icon" type="image/png" href="app/img/favicon-LS.png">
 		<script type="text/javascript" src="app/bower/modernizr/modernizr.js"></script>
@@ -114,7 +116,24 @@
 
 		</div>
 	</div>
-
+<form  class="login-form" id="login-form">
+		<div class="login-form-wrap-content">
+			<div class="login-form-header">
+				<div class="login-form-header-title">
+					Авторизируйтесь
+				</div>
+				
+			</div>
+			<div class="login-form-buttom-line"></div>
+			<div class="login-form-main-content">
+				<label for="login">Логин</label><br>
+				<input id="login" class="login-input" type="text" placeholder="Введите логин"><br>
+				<label for="login">Пароль</label><br>
+				<input id="password" class="pass-input" type="password" placeholder="Введите пароль">
+				<input type="submit" value="Войти" class="login-form-btn-send" id="login-submit">
+			</div>
+		</div>
+	</form>
 
 
 	<footer class="page-footer">
@@ -132,6 +151,9 @@
 	</footer>
 	<script type="text/javascript" src="app/bower/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="app/bower/bPopup/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="app/bower/qtip2/jquery.qtip.js"></script>
+	<script type="text/javascript" src="app/js/login.js"></script>
 	<script type="text/javascript" src="app/js/writeme.js"></script>
 </body>
 </html>

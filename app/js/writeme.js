@@ -26,13 +26,11 @@ var writemeValidateModule = (function(){
 				//убираем класс предупреждения у input
 				input.on('focus',function () {
 			        var thisInput = $(this);
-			        if(thisInput.hasClass('no-valide')){
 			        thisInput.on('keydown',function () {
+			        // input.removeClass('no-valide');
 			        input.removeClass('no-valide');
-
-			            });
-			         }
-
+			         input.qtip('hide');
+			        });
 			    });
 
 
@@ -40,19 +38,69 @@ var writemeValidateModule = (function(){
 				// проверяем все input
 				if(!input.val()){
 					input.addClass('no-valide');
+						if(input.attr('id') ==="firstname"){
+							input.qtip({
+									content: 'Заполните поле!',
+										style: {
+											classes: 'qtip-red qtip-shadow'
+										},
+										position: {
+											my: 'center right',
+											at: 'center left'
+											},
+										show: {
+												/*when: false,*/ // Don't specify a show event
+												ready: true // Show the tooltip when ready
+											},
+										hide: false, // Don't specify a hide event
+								})
+						}else{
+								input.qtip({
+									content: 'Заполните поле!',
+										style: {
+											classes: 'qtip-red qtip-shadow'
+										},
+										position: {
+											my: 'center left',
+											at: 'center right'
+											},
+										show: {
+												when: false, // Don't specify a show event
+												ready: true // Show the tooltip when ready
+											},
+										hide: false, // Don't specify a hide event
+								})
+						}
+					
 				};
 
 				// Проверяем textarea
 				if(!$('#textmessage').val()){
-					$('#textmessage').addClass('no-valide')
+					$('#textmessage').addClass('no-valide');
+					$('#textmessage').qtip({
+									content: 'Заполните поле!',
+										style: {
+											classes: 'qtip-red qtip-shadow'
+										},
+										position: {
+											my: 'center left',
+											at: 'center right'
+											},
+										show: {
+												when: false, // Don't specify a show event
+												ready: true // Show the tooltip when ready
+											},
+										hide: false, // Don't specify a hide event
+								})
 				}
 
 				//убираем класс предупреждения у textarea
-			    if($('#textmessage').hasClass('no-valide')){
+
 			    	$('#textmessage').on('keydown',function(){
 			    		$('#textmessage').removeClass('no-valide');
+			    		$('#textmessage').qtip('hide');
 			    	})
-			    }
+			    
 
 
 			    //Проверяем URL
@@ -60,7 +108,7 @@ var writemeValidateModule = (function(){
 			    if(inputEmail.val()){
 			    	var rgxEmail = /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/ ;
 			    	if(!rgxEmail.test(inputEmail.val())){
-			    		inputEmail.addClass('no-valide');
+			    		/*inputEmail.addClass('no-valide');*/
 			    		
 			    	}
 	    			

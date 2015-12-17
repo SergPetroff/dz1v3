@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="app/css/style.css">
 		<link rel="stylesheet" type="text/css" href="app/css/gallery.css">
 		<link rel="stylesheet" type="text/css" href="app/css/popup.css">
+		<link rel="stylesheet" type="text/css" href="app/bower/qtip2/jquery.qtip.min.css">
 
 		<link rel="stylesheet" type="text/css" href="app/fonts/fira/fira.css">
 		<!--<link rel="stylesheet" type="text/css" href="css\rightblock.css">-->
@@ -68,14 +69,14 @@
 	<div class="checked-form clearfix b-close">
 		<div class="close-btn-green right">
 		
-	</div>
-		<div class="checked-send-wraptext">
-			<span class="checked-send-title">Ура!</span></br>
-			<span class="checked-send-desc">Проект успешно добавлен</span>
 		</div>
-	</div>
+			<div class="checked-send-wraptext">
+				<span class="checked-send-title">Ура!</span></br>
+				<span class="checked-send-desc">Проект успешно добавлен</span>
+			</div>
+		</div>
 
-</div>
+	</div>
 			<!-- Блок данных  -->
 			<div class="mywork-content">
 			<div class="wrap-content">
@@ -181,6 +182,14 @@
 					<span class="error-send-desc">Невозможно отправить проект</span>
 				</div>
 			</div>
+
+			<div class="valid-send">
+				<div class="valid-send-wraptext">
+					<span class="valid-send-title">Ура!</span></br>
+					<span class="valid-send-desc">Проект успешно добавлен</span>
+				</div>
+			</div>
+
 			<label for="nameproject">Название проекта</label>
 			<input type="text" name="nameproject" id="nameproject" placeholder="Введите название"></br>
 			<label for="addfile">Картинка проекта</label>
@@ -209,18 +218,27 @@
 </form>
 
 
-<div class="info-popup">
-	<div class="checked-form">
-		<div class="close-btn-green right b-close">
-		
-	</div>
-		<div class="checked-send-wraptext">
-			<span class="checked-send-title">Ура!</span></br>
-			<span class="checked-send-desc">Проект успешно добавлен</span>
-		</div>
-	</div>
 
-</div>
+
+
+<form  class="login-form" id="login-form">
+		<div class="login-form-wrap-content">
+			<div class="login-form-header">
+				<div class="login-form-header-title">
+					Авторизируйтесь
+				</div>
+				
+			</div>
+			<div class="login-form-buttom-line"></div>
+			<div class="login-form-main-content">
+				<label for="login">Логин</label><br>
+				<input id="login" class="login-input" type="text" placeholder="Введите логин"><br>
+				<label for="login">Пароль</label><br>
+				<input id="password" class="pass-input" type="password" placeholder="Введите пароль">
+				<input type="submit" value="Войти" class="login-form-btn-send" id="login-submit">
+			</div>
+		</div>
+	</form>
 
 <!-- футер -->
 
@@ -240,6 +258,8 @@
 	</footer>
 	<script type="text/javascript" src="app/bower/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="app/bower/bPopup/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="app/bower/qtip2/jquery.qtip.js"></script>
+	<script type="text/javascript" src="app/js/login.js"></script>
 	<script type="text/javascript" src="app/js/mainjs.js"></script>
 </body>
 </html>

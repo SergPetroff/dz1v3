@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	if(!Modernizr.input.placeholder){
 		$('input, #textmessage').placeholder();
-		console.log('не поддерживает')
 	}
 	
 });
@@ -45,6 +44,9 @@ var Module = (function () {
 			transition: 'slideDown',
 			onClose:function(){
 				$( ".error-send").hide(); //скрытие окна ошибки
+				$(".valid-send").hide();
+				$('*').qtip('hide');
+
 			}
 		});
 
@@ -52,6 +54,7 @@ var Module = (function () {
 	};
 	// ОТправка проекта и проверка данных от сервера
 	var _addProject = function(ev){
+		var checkvalid = true;
 		ev.preventDefault(); // делать обязательно для отправки формы, иначе не будет работать ajax
 		
 
@@ -61,45 +64,94 @@ var Module = (function () {
 				var input = inputs.eq(index)
 				
 				//убираем класс предупреждения у input
-					input.on('focus',function () {
+				input.on('focus',function () {
 			        var thisInput = $(this);
-			        if(thisInput.hasClass('no-valide')){
+
 			        thisInput.on('keydown',function () {
-			        input.removeClass('no-valide');
+			        	input.qtip('hide');
 
 			            });
-			         }
+			         
 
 			    });
 
 
 				// проверяем все input
 				if(!input.val()){
-					input.addClass('no-valide');
+					checkvalid = false;
+					$( ".error-send").show();
+					if(input.attr('id') != "addfile"){
+						input.qtip({
+								content: 'Заполните поле!',
+									style: {
+										classes: 'qtip-red qtip-shadow'
+									},
+									position: {
+										my: 'center left',
+										at: 'center right'
+										},
+									show: {
+											when: false, // Don't specify a show event
+											ready: true // Show the tooltip when ready
+										},
+									hide: false, // Don't specify a hide event
+							})
+					} 
 				};
 
 
 				//проверяем input file
 				var file = $('#addfile')[0].files[0]
+				console.log(file.name);
 					if(!file){
-					  input.parent(".lbl-addfile").addClass('no-valide');
+						checkvalid = false;
+					  input.parent(".lbl-addfile").qtip({
+								content: 'Заполните поле!',
+									style: {
+										classes: 'qtip-red qtip-shadow'
+									},
+									position: {
+										my: 'center left',
+										at: 'center right'
+										},
+									show: {
+											when: false, // Don't specify a show event
+											ready: true // Show the tooltip when ready
+										},
+									hide: false, // Don't specify a hide event
+							});
 					}
 			});
 
 
 			// Проверяем textarea
 			if(!$('#Description').val()){
-				$('#Description').addClass('no-valide')
-			}
+				checkvalid = false;
+				$('#Description').qtip({
+								content: 'Заполните поле!',
+									style: {
+										classes: 'qtip-red qtip-shadow'
+									},
+									position: {
+										my: 'center left',
+										at: 'center right'
+										},
+									show: {
+											when: false, // Don't specify a show event
+											ready: true // Show the tooltip when ready
+										},
+									hide: false, // Don't specify a hide event
+							});
+			};
 
 			//
 
 			//убираем класс предупреждения у textarea
-		    if($('#Description').hasClass('no-valide')){
+		    
 		    	$('#Description').on('keydown',function(){
-		    		$('#Description').removeClass('no-valide');
+		    		$('#Description').qtip('hide');
 		    	})
-		    }
+		    
 
 
 		    //Проверяем URL
@@ -107,11 +159,31 @@ var Module = (function () {
 		    if(inputURL.val()){
 		    	var regexpURL = /^(https?:\/\/)?([\w\.]+)\.([a-z]{2,6}\.?)(\/[\w\.]*)*\/?$/;
 		    	if(!regexpURL.test(inputURL.val())){
-		    		inputURL.addClass('no-valide');
+		    		checkvalid = false;
+		    		inputURL.qtip({
+								content: 'Укажите URL адресс сайта!',
+									style: {
+										classes: 'qtip-red qtip-shadow'
+									},
+									position: {
+										my: 'center left',
+										at: 'center right'
+										},
+									show: {
+											when: false, // Don't specify a show event
+											ready: true // Show the tooltip when ready
+										},
+									hide: false, // Don't specify a hide event
+							});
 		    	}
     			
     		}
-			
+			console.log(checkvalid);
+			if(checkvalid){
+				$(".error-send").hide();
+	    		$(".valid-send").show();
+    		}
+
 
 	};
 
