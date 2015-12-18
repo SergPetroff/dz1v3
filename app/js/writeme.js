@@ -11,7 +11,13 @@ var writemeValidateModule = (function(){
 
     var _setUpListners = function(){
     	$('#content-form').on('submit',_validateField); //перехват отправки формы
+    	$(".bt-reset").on('click',_clearerror);
     };
+
+    var _clearerror = function(ev){
+    	$('*').qtip('destroy');
+    	$('*').removeClass('no-valide');
+    }
 
 		var _validateField = function(ev){
 			ev.preventDefault();
@@ -29,7 +35,7 @@ var writemeValidateModule = (function(){
 			        thisInput.on('keydown',function () {
 			        // input.removeClass('no-valide');
 			        input.removeClass('no-valide');
-			         input.qtip('destroy');;
+			         input.qtip('destroy');
 			        });
 			    });
 
