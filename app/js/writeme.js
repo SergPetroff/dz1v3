@@ -29,7 +29,7 @@ var writemeValidateModule = (function(){
 			        thisInput.on('keydown',function () {
 			        // input.removeClass('no-valide');
 			        input.removeClass('no-valide');
-			         input.qtip('hide');
+			         input.qtip('destroy');;
 			        });
 			    });
 
@@ -40,7 +40,7 @@ var writemeValidateModule = (function(){
 					input.addClass('no-valide');
 						if(input.attr('id') ==="firstname"){
 							input.qtip({
-									content: 'Заполните поле!',
+									content: 'Вы не ввели имя!',
 										style: {
 											classes: 'qtip-red qtip-shadow'
 										},
@@ -54,23 +54,41 @@ var writemeValidateModule = (function(){
 											},
 										hide: false, // Don't specify a hide event
 								})
-						}else{
-								input.qtip({
-									content: 'Заполните поле!',
-										style: {
-											classes: 'qtip-red qtip-shadow'
-										},
-										position: {
-											my: 'center left',
-											at: 'center right'
-											},
-										show: {
-												when: false, // Don't specify a show event
-												ready: true // Show the tooltip when ready
-											},
-										hide: false, // Don't specify a hide event
-								})
-						}
+						}else if(input.attr('id') ==="capcha"){
+										input.qtip({
+											content: 'Вы не ввели код!',
+												style: {
+													classes: 'qtip-red qtip-shadow'
+												},
+												position: {
+													my: 'center left',
+													at: 'center right'
+													},
+												show: {
+														when: false, // Don't specify a show event
+														ready: true // Show the tooltip when ready
+													},
+												hide: false, // Don't specify a hide event
+										})
+								}else if(input.attr('id') ==="email"){
+										input.qtip({
+											content: 'Вы не ввели email!',
+												style: {
+													classes: 'qtip-red qtip-shadow'
+												},
+												position: {
+													my: 'center left',
+													at: 'center right'
+													},
+												show: {
+														when: false, // Don't specify a show event
+														ready: true // Show the tooltip when ready
+													},
+												hide: false, // Don't specify a hide event
+										})
+
+								}
+
 					
 				};
 
@@ -78,13 +96,13 @@ var writemeValidateModule = (function(){
 				if(!$('#textmessage').val()){
 					$('#textmessage').addClass('no-valide');
 					$('#textmessage').qtip({
-									content: 'Заполните поле!',
+									content: 'Ваш вопрос!',
 										style: {
 											classes: 'qtip-red qtip-shadow'
 										},
 										position: {
-											my: 'center left',
-											at: 'center right'
+											my: 'center right',
+											at: 'center left'
 											},
 										show: {
 												when: false, // Don't specify a show event
@@ -98,7 +116,7 @@ var writemeValidateModule = (function(){
 
 			    	$('#textmessage').on('keydown',function(){
 			    		$('#textmessage').removeClass('no-valide');
-			    		$('#textmessage').qtip('hide');
+			    		$('#textmessage').qtip('destroy');;
 			    	})
 			    
 

@@ -376,7 +376,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', end
 }
 
    .no-valide{
-        background: rgba(243, 63, 7, 0.45);
+        background: rgba(243, 63, 7, 0.45)!important;
         border: solid 1px #f97e76 !important;
    }
 

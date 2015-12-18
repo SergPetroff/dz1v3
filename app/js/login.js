@@ -19,6 +19,10 @@ var Module = (function(){
 		    	$('#login-form').bPopup({ //открытие popup окна
 						speed: 650,
 						transition: 'slideDown',
+						onClose: function(){
+			                  console.log('closed');
+			                  $('*').qtip('destroy');
+			               }
 					});
 				e.preventDefault();
 	    	}
@@ -38,7 +42,7 @@ var Module = (function(){
 		                /*if(thisInput.hasClass('no-valide')){*/
 		                    thisInput.on('keydown',function () {
 		                        /*input.removeClass('no-valide');*/
-		                       input.qtip('hide');
+		                       input.qtip('destroy');
 
 		                    });
 		                //}

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 	if(!Modernizr.input.placeholder){
 		$('input, #textmessage').placeholder();
@@ -31,7 +32,7 @@ var Module = (function () {
 				'font-size' : '18px'
 			});
 
-			$(".lbl-addfile").removeClass('no-valide');
+			$(".lbl-addfile").removeClass('no-valide').qtip('destroy');;
 		}
 	}
 
@@ -45,7 +46,8 @@ var Module = (function () {
 			onClose:function(){
 				$( ".error-send").hide(); //скрытие окна ошибки
 				$(".valid-send").hide();
-				$('*').qtip('hide');
+				$('*').qtip('destroy');
+				$('*').removeClass('no-valide');
 
 			}
 		});
@@ -68,7 +70,8 @@ var Module = (function () {
 			        var thisInput = $(this);
 
 			        thisInput.on('keydown',function () {
-			        	input.qtip('hide');
+			        	input.removeClass('no-valide');
+			        	input.qtip('destroy');
 
 			            });
 			         
@@ -81,14 +84,15 @@ var Module = (function () {
 					checkvalid = false;
 					$( ".error-send").show();
 					if(input.attr('id') != "addfile"){
+						input.addClass('no-valide');
 						input.qtip({
 								content: 'Заполните поле!',
 									style: {
 										classes: 'qtip-red qtip-shadow'
 									},
 									position: {
-										my: 'center left',
-										at: 'center right'
+										my: 'center right',
+										at: 'center left'
 										},
 									show: {
 											when: false, // Don't specify a show event
@@ -102,17 +106,17 @@ var Module = (function () {
 
 				//проверяем input file
 				var file = $('#addfile')[0].files[0]
-				console.log(file.name);
 					if(!file){
-						checkvalid = false;
-					  input.parent(".lbl-addfile").qtip({
-								content: 'Заполните поле!',
+					checkvalid = false;
+					input.parent(".lbl-addfile").addClass('no-valide');
+					 input.parent(".lbl-addfile").qtip({
+								content: 'Изображение!',
 									style: {
 										classes: 'qtip-red qtip-shadow'
 									},
 									position: {
-										my: 'center left',
-										at: 'center right'
+										my: 'center right',
+										at: 'center left'
 										},
 									show: {
 											when: false, // Don't specify a show event
@@ -127,14 +131,15 @@ var Module = (function () {
 			// Проверяем textarea
 			if(!$('#Description').val()){
 				checkvalid = false;
+				$('#Description').addClass('no-valide');
 				$('#Description').qtip({
-								content: 'Заполните поле!',
+								content: 'Описание проекта!',
 									style: {
 										classes: 'qtip-red qtip-shadow'
 									},
 									position: {
-										my: 'center left',
-										at: 'center right'
+										my: 'center right',
+										at: 'center left'
 										},
 									show: {
 											when: false, // Don't specify a show event
@@ -149,7 +154,8 @@ var Module = (function () {
 			//убираем класс предупреждения у textarea
 		    
 		    	$('#Description').on('keydown',function(){
-		    		$('#Description').qtip('hide');
+		    		$('#Description').qtip('destroy');
+		    		$('#Description').removeClass('no-valide');
 		    	})
 		    
 
@@ -160,14 +166,15 @@ var Module = (function () {
 		    	var regexpURL = /^(https?:\/\/)?([\w\.]+)\.([a-z]{2,6}\.?)(\/[\w\.]*)*\/?$/;
 		    	if(!regexpURL.test(inputURL.val())){
 		    		checkvalid = false;
+		    		inputURL.addClass('no-valide');
 		    		inputURL.qtip({
-								content: 'Укажите URL адресс сайта!',
+								content: 'Ссылка на проект!',
 									style: {
 										classes: 'qtip-red qtip-shadow'
 									},
 									position: {
-										my: 'center left',
-										at: 'center right'
+										my: 'center right',
+										at: 'center left'
 										},
 									show: {
 											when: false, // Don't specify a show event
