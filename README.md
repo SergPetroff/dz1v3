@@ -6,4 +6,6 @@
 4. npm i
 5. normalize i
 6. Modernizr -i
-7. jquery-placeholder -i
+7. bpopup -i
+8. qtip -i
+9. jquery-placeholder -i
