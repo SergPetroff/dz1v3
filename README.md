@@ -1,7 +1,7 @@
 Для установки проекта:
 
 1. git clone https://github.com/SergPetroff/dz1v3.git
-2. cd newfolder
+2. cd dz1v3
 3. bower i
-4. npm i
+4. npm is
 9. gulp
