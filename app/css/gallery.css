@@ -100,10 +100,14 @@
 	color: #3BA8C0;
 	text-decoration: none;
 	margin-top: 4px;
-	margin-bottom: 20px;
 	text-align: center;
+	font-style: italic;
+    font-size: 14px;
 }
 
 .desc{
-	text-align: center;
+	display: block;
+    max-width: 180px;
+    text-align: center;
+    color: #687078;
 }

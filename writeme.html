@@ -17,6 +17,10 @@
 		<link rel="stylesheet" type="text/css" href="app/bower/qtip2/jquery.qtip.min.css">
 				<!--favicon -->
 		<link rel="icon" type="image/png" href="app/img/favicon-LS.png">
+
+		<!--[if lt IE 9]>
+		    <script src="app/bower/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
 		<script type="text/javascript" src="app/bower/modernizr/modernizr.js"></script>
 		
 		
@@ -80,23 +84,24 @@
 
 					<form class="content-form" id="content-form">
 
-						<div class="wrap-field clearfix">
+						<div class="wrap-field">
+						
+								<div class="form-field  inlbblck mrgbtn">
+								  <label for="firstname">Имя</label>
+								  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться"  maxlength="20">
+								 </div>
+	
 
-							<div class="form-field left">
-							  <label for="firstname">Имя</label>
-							  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться"  maxlength="20">
-							 </div>
-
-							 <div class="form-field right">
+							 <div class="form-field inlbblck mrglft">
 							 <label for="email">Email</label>
 	  							<input type="text" id="email" name="email" placeholder="Куда мне писать"  maxlength="50">
 							 </div>
 
-							<div class="form-field">
-								<label for="textmessage">Сообщение</label>
+							<div class="form-field msgblock">
+								<label for="textmessage" class="title-txtarea">Сообщение</label>
 								<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
 							</div>
-							<div class="form-field clearfix">
+							<div class="form-field clearfix inputcode">
 								<label for="capcha">Введите указанный код на картинке</label>
 								<div class="capcha">
 									<div class="img-capcha"></div>
@@ -104,7 +109,7 @@
 								<input class="capcha-input right" type="text" id="capcha" name="capcha" placeholder="Введите код"  maxlength="10" />
 							</div>
 							<div class="buttons">
-				    		<input class="bt-submit" type="submit" value="Войти">
+				    		<input class="bt-submit" type="submit" value="Отправить">
 				    		<input class="bt-reset" type="reset" value="Очистить">
 				    		</div>	
 
@@ -153,6 +158,7 @@
 	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="app/bower/bPopup/jquery.bpopup.js"></script>
 	<script type="text/javascript" src="app/bower/qtip2/jquery.qtip.js"></script>
+	<script type="text/javascript" src="app/js/mainjs.js"></script>
 	<script type="text/javascript" src="app/js/login.js"></script>
 	<script type="text/javascript" src="app/js/writeme.js"></script>
 </body>

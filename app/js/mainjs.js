@@ -1,8 +1,8 @@
 
 $(document).ready(function() {
-	if(!Modernizr.input.placeholder){
-		$('input, #textmessage').placeholder();
-	}
+		console.log('Запускаем placeholder')
+		$('input, textarea').placeholder();
+
 	
 });
 
