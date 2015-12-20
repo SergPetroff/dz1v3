@@ -150,9 +150,9 @@ a{
 /*Левый блок конец*/
 /* Блок с данными профиля*/
 
-.clearfix:before .clearfix:after{
-	content: "";
-	/*display: table;*/
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: table;
 }
 
 .clearfix:after{

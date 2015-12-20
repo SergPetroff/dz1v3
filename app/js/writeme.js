@@ -122,17 +122,33 @@ var writemeValidateModule = (function(){
 
 			    	$('#textmessage').on('keydown',function(){
 			    		$('#textmessage').removeClass('no-valide');
-			    		$('#textmessage').qtip('destroy');;
+			    		$('#textmessage').qtip('destroy');
 			    	})
 			    
 
 
-			    //Проверяем URL
+			    //Проверяем Email
 			    var inputEmail = $('#email');
 			    if(inputEmail.val()){
 			    	var rgxEmail = /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/ ;
 			    	if(!rgxEmail.test(inputEmail.val())){
+			    		console.log('ссылка не валидна')
 			    		/*inputEmail.addClass('no-valide');*/
+		    				inputEmail.qtip({
+								content: 'Укажите правильный Email!',
+									style: {
+										classes: 'qtip-red qtip-shadow'
+									},
+									position: {
+										my: 'center left',
+										at: 'center right'
+										},
+									show: {
+											when: false, // Don't specify a show event
+											ready: true // Show the tooltip when ready
+										},
+									hide: false, // Don't specify a hide event
+							});
 			    		
 			    	}
 	    			

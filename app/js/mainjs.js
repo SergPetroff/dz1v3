@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-		console.log('Запускаем placeholder')
 		$('input, textarea').placeholder();
 
 	
@@ -168,7 +167,7 @@ var Module = (function () {
 		    		checkvalid = false;
 		    		inputURL.addClass('no-valide');
 		    		inputURL.qtip({
-								content: 'Ссылка на проект!',
+								content: 'Укажите правильный URL!',
 									style: {
 										classes: 'qtip-red qtip-shadow'
 									},

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="ru-RU">
 <meta charset="utf-8">
 <head>
@@ -18,8 +18,9 @@
 				<!--favicon -->
 		<link rel="icon" type="image/png" href="app/img/favicon-LS.png">
 
+
 		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
 		<script type="text/javascript" src="app/bower/modernizr/modernizr.js"></script>
 		
@@ -85,24 +86,25 @@
 					<form class="content-form" id="content-form">
 
 						<div class="wrap-field">
-						
-								<div class="form-field  inlbblck mrgbtn">
-								  <label for="firstname">Имя</label>
-								  <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться"  maxlength="20">
-								 </div>
+							<div class="wrap-name-email clearfix">
+							<div class="form-field  left">
+								 <label for="firstname">Имя</label>
+								 <input type="text" id="firstname" name="firstname" placeholder="Как к вам обращаться"  maxlength="20">
+							</div>
 	
 
-							 <div class="form-field inlbblck mrglft">
+							 <div class="form-field  right">
 							 <label for="email">Email</label>
 	  							<input type="text" id="email" name="email" placeholder="Куда мне писать"  maxlength="50">
+							 </div>
 							 </div>
 
 							<div class="form-field msgblock">
 								<label for="textmessage" class="title-txtarea">Сообщение</label>
 								<textarea placeholder="Кратко в чем суть" id="textmessage" name="textmessage"></textarea>
 							</div>
-							<div class="form-field clearfix inputcode">
-								<label for="capcha">Введите указанный код на картинке</label>
+							<div class="form-field inputcode">
+								<label for="capcha" class="lbl-capcha">Введите указанный код на картинке</label>
 								<div class="capcha">
 									<div class="img-capcha"></div>
 								</div>
@@ -155,9 +157,9 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="app/bower/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="app/bower/bPopup/jquery.bpopup.js"></script>
 	<script type="text/javascript" src="app/bower/qtip2/jquery.qtip.js"></script>
+	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="app/js/mainjs.js"></script>
 	<script type="text/javascript" src="app/js/login.js"></script>
 	<script type="text/javascript" src="app/js/writeme.js"></script>
