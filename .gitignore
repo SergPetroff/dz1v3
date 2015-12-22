@@ -1,5 +1,6 @@
 node_modules
 app/bower
+Thumbs.db
 
 # Windows image file caches
 Thumbs.db
