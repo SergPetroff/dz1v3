@@ -45,7 +45,6 @@ var Module = (function () {
 
 	//Работает с модельными окнами
 	var _showModal = function (ev) {
-		console.log('вызов модального окна');
 		$('.popup-add-content').bPopup({ //открытие popup окна
 			speed: 650,
 			transition: 'slideDown',
