@@ -78,7 +78,7 @@
 
 /*Окно загрузки файла*/
 .popup-add-content{
-    display:none;
+    /*display:none;*/
     width: 362px;
     background: #eff3f7;
     border-radius: 4px;
@@ -157,10 +157,12 @@
 
 
 .main-add-form label{
+    display: block;
         font-size: large;
     color: #959AA8;
 }
 .lbl-addfile{
+        margin-bottom: 16px;
     background: #fbfcfd;
     display: block;
     border-radius: 4px;
@@ -173,7 +175,10 @@
     cursor: pointer;
 }
 
+
+
 .lbl-addfile span{
+    height: 5px;
     float: left;
     display: block;
     padding: 9px 6px;
@@ -199,7 +204,8 @@
 
 
 
-textarea{
+.add-cont-txtarea{
+    margin-bottom: 5px;
     font-family: 'fira_sanslight';
     font-size: 16px;
     width: 320px;

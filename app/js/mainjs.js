@@ -22,10 +22,13 @@ var Module = (function () {
 
 	// Заполняем поле загрузки
 	var _addFile = function(ev){
-		var file = $('#addfile')[0].files[0];
-
-		if(file.name){
-			$('.textfile').text(file.name);
+		var fileName = ""
+	$('#addfile').each(function() {
+	     fileName = $(this).val().split('/').pop().split('\\').pop();
+	});
+		
+		if(fileName){
+			$('.textfile').text(fileName);
 			$('.lbl-addfile').css({
 				'color':'#959AA8',
 				'font-size' : '18px'
@@ -33,6 +36,10 @@ var Module = (function () {
 
 			$(".lbl-addfile").removeClass('no-valide').qtip('destroy');;
 		}
+	}
+
+	function loadFile(evt){
+     var n = evt.target.value.substring(evt.target.value.lastIndexOf('\\') + 1);
 	}
 
 
@@ -87,7 +94,7 @@ var Module = (function () {
 						input.qtip({
 								content: 'Заполните поле!',
 									style: {
-										classes: 'qtip-red qtip-shadow'
+										classes: 'qtip-red qtip-shadow qtip-mystyle'
 									},
 									position: {
 										my: 'center right',
@@ -104,14 +111,16 @@ var Module = (function () {
 
 
 				//проверяем input file
-				var file = $('#addfile')[0].files[0]
-					if(!file){
+				//var file = $('#addfile')[0].files[0]
+
+					if(!$('#addfile').val()){
+						
 					checkvalid = false;
 					input.parent(".lbl-addfile").addClass('no-valide');
 					 input.parent(".lbl-addfile").qtip({
 								content: 'Изображение!',
 									style: {
-										classes: 'qtip-red qtip-shadow'
+										classes: 'qtip-red qtip-shadow qtip-mystyle'
 									},
 									position: {
 										my: 'center right',
@@ -134,7 +143,7 @@ var Module = (function () {
 				$('#Description').qtip({
 								content: 'Описание проекта!',
 									style: {
-										classes: 'qtip-red qtip-shadow'
+										classes: 'qtip-red qtip-shadow qtip-mystyle'
 									},
 									position: {
 										my: 'center right',
@@ -169,7 +178,7 @@ var Module = (function () {
 		    		inputURL.qtip({
 								content: 'Укажите правильный URL!',
 									style: {
-										classes: 'qtip-red qtip-shadow'
+										classes: 'qtip-red qtip-shadow qtip-mystyle'
 									},
 									position: {
 										my: 'center right',

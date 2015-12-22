@@ -48,7 +48,7 @@ var writemeValidateModule = (function(){
 							input.qtip({
 									content: 'Вы не ввели имя!',
 										style: {
-											classes: 'qtip-red qtip-shadow'
+											classes: 'qtip-red qtip-shadow qtip-mystyle'
 										},
 										position: {
 											my: 'center right',
@@ -64,7 +64,7 @@ var writemeValidateModule = (function(){
 										input.qtip({
 											content: 'Вы не ввели код!',
 												style: {
-													classes: 'qtip-red qtip-shadow'
+													classes: 'qtip-red qtip-shadow qtip-mystyle'
 												},
 												position: {
 													my: 'center left',
@@ -80,7 +80,7 @@ var writemeValidateModule = (function(){
 										input.qtip({
 											content: 'Вы не ввели email!',
 												style: {
-													classes: 'qtip-red qtip-shadow'
+													classes: 'qtip-red qtip-shadow qtip-mystyle'
 												},
 												position: {
 													my: 'center left',
@@ -104,7 +104,7 @@ var writemeValidateModule = (function(){
 					$('#textmessage').qtip({
 									content: 'Ваш вопрос!',
 										style: {
-											classes: 'qtip-red qtip-shadow'
+											classes: 'qtip-red qtip-shadow qtip-mystyle'
 										},
 										position: {
 											my: 'center right',
@@ -137,7 +137,7 @@ var writemeValidateModule = (function(){
 		    				inputEmail.qtip({
 								content: 'Укажите правильный Email!',
 									style: {
-										classes: 'qtip-red qtip-shadow'
+										classes: 'qtip-red qtip-shadow qtip-mystyle'
 									},
 									position: {
 										my: 'center left',

@@ -2,7 +2,11 @@
   "name": "dzmysite",
   "version": "1.0.0",
   "devDependencies": {
-  	"browser-sync": "^2.10.0",
-    "gulp": "^3.9.0"
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-install": "^0.6.0"
+  },
+  "dependencies": {
+    "gulp-install": "^0.6.0"
   }
 }

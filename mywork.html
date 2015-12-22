@@ -2,7 +2,7 @@
 <html lang="ru-RU">
 <meta charset="utf-8">
 <head>
-	<title></title>
+	<title>Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="app/bower/normalize-css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="app/css/header.css">
 		<link rel="stylesheet" type="text/css" href="app/css/style.css">
@@ -27,7 +27,7 @@
 		<header class="page-header">
 			<div class="container-header">
 				<a class="header-logo-block" href="#">
-					<img class="logo-img" src="app/img/logo-hor.png">
+					<img class="logo-img" src="app/img/logo-hor.png" alt="Логотип">
 					<span class="header-logo-text">Сайт портфолио</span>
 				</a>
 
@@ -196,23 +196,23 @@
 			</div>
 
 			<label for="nameproject">Название проекта</label>
-			<input type="text" name="nameproject" id="nameproject" placeholder="Введите название"></br>
+			<input type="text" name="nameproject" id="nameproject" placeholder="Введите название">
 			<label for="addfile">Картинка проекта</label>
-			<label for="addfile" class="lbl-addfile">
-			<span class="textfile">Загрузите изображение</span>
-			
+			<label for="addfile" class="lbl-addfile clearfix">
+				
+					<span class="textfile">Загрузите изображение</span>
+					<div class="wrap-img-add-file">
+							<div class="img-add-file"></div>
+					</div>
+				
 				<input type="file" name="hideinput" id="addfile" class="hideinput" accept="image/jpeg, image/png, image/gif">
-				<div class="wrap-img-add-file">
-					<div class="img-add-file"></div>
-				</div>
-			</label>
 
-			<!--<input type="file" name="addfile" id="addfile" placeholder="Загрузите изображение">--></br>
+			</label>
 			<label for="urlfield">URL проекта</label>
-			<input type="text" name="urlfield" id="urlfield" placeholder="Добавьте ссылку"></br>
+			<input type="text" name="urlfield" id="urlfield" placeholder="Добавьте ссылку">
 
 			<label for="Description">Описание</label>
-			<textarea name="Description" id="Description" rows="4" placeholder="Пара слов о вашем проекте"></textarea></br>
+			<textarea class="add-cont-txtarea" name="Description" id="Description" rows="4" placeholder="Пара слов о вашем проекте"></textarea>
 			<div class="button-block">
 			<input type="submit" value="Отправить" class="btn-send">
 			</div>
@@ -236,9 +236,9 @@
 			</div>
 			<div class="login-form-buttom-line"></div>
 			<div class="login-form-main-content">
-				<label for="login">Логин</label><br>
-				<input id="login" class="login-input" type="text" placeholder="Введите логин"><br>
-				<label for="login">Пароль</label><br>
+				<label for="login">Логин</label>
+				<input id="login" class="login-input" type="text" placeholder="Введите логин">
+				<label for="login">Пароль</label>
 				<input id="password" class="pass-input" type="password" placeholder="Введите пароль">
 				<input type="submit" value="Войти" class="login-form-btn-send" id="login-submit">
 			</div>

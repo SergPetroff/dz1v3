@@ -83,7 +83,7 @@
 }
 
 .form-field input::-webkit-input-placeholder {
-    color: #67dffa; /* Цвет подсказывающего текста */
+    color: #54cee9; /* Цвет подсказывающего текста */
     font-size: 13px;
    }
 
@@ -99,7 +99,7 @@
 
 .form-field textarea::-webkit-input-placeholder {
 	padding: 5px 3px;
-    color: #67dffa; /* Цвет подсказывающего текста */
+    color: #54cee9; /* Цвет подсказывающего текста */
     font-size: 13px;
    }
 
@@ -172,4 +172,5 @@
 .bt-reset:hover{
 	box-shadow: none;
 }
+
 
